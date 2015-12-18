@@ -1,0 +1,300 @@
+@import "compass/css3";
+@import "includes/fonts";
+@import "includes/mixins";
+@import "includes/vars";
+@import "includes/general";
+@import "includes/retina-sprites";
+@import "includes/retina-background-image";
+@import "includes/media-queries";
+@import "includes/header";
+@import "includes/footer";
+
+.container-xl {
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+    .container {
+        width: 700px;
+        margin: 0 auto;
+        .content {
+            width: 100%;
+            margin-left: -5px;
+            margin-right: -5px;
+            display: table;
+        }
+        .text {
+            clear: both;
+            padding-top: 150px;
+            max-width: 65%;
+            .btn-header {
+                margin-top: 60px;
+                .button {
+                    margin: 0 5px 0 0;
+                }
+            }
+        }
+    }
+}
+.section {
+    display: table;
+    text-align: center;
+    h1 {
+        text-align: center;
+        margin: 80px 0;
+        padding: 0 5px;
+    }
+    h2 {
+        padding: 0 5px;
+    }
+    &.welcome {
+        @import "includes/_welcome.scss";
+    }
+    &.projects {
+        .projects-example {
+            width: 25%;
+            display: inline-block;
+            padding: 0 5px;
+            box-sizing: border-box;
+            background: #efefef;
+            cursor: pointer;
+            @include transition(all 0.5s);
+            img {
+                width: 110%;
+                margin: 0 -6px;
+            }
+            .description {
+                padding: 40px;
+                position: relative;
+                min-height: 220px;
+            }
+            &:hover {
+                background: #ffe26d;
+            }
+        }
+    }
+    &.pricing,
+    &.blog {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 80px;
+        .pricing-item,
+        .blog-item {
+            width: calc(100%/3);
+            display: inline-block;
+            padding: 0 5px;
+            text-align: center;
+        }
+        .pricing-item {
+            span {
+                display: block;
+                font-family: Helvetica;
+                line-height: 1.5;
+                font-size: 14px;
+                &.button {
+                    margin-top: 25px;
+                    padding: 15px 25px;
+                }
+            }
+        }
+        .blog-item {
+            span {
+                display: block;
+                line-height: 1.5;
+                font-family: Helvetica;
+                font-size: 14px;
+                &.button {
+                    margin-top: 25px;
+                    padding: 15px 25px;
+                    background: #ececec;
+                    &:hover {
+                        background: #ffe26d;
+                        a {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.video {
+        background: #62497c;
+        padding-bottom: 100px;
+        h1 {
+            color: #fff;
+        }
+        span {
+            text-transform: uppercase;
+            font-family: "Montserrat Bold";
+            font-size: 13px;
+            color: #ffffff;
+            margin: 15px 5px 0 5px;
+            &.left {
+                float: left;
+            }
+            &.right {
+                float: right;
+            }
+        }
+        .player {
+            position: relative;
+            .play {
+                position: absolute;
+                top: 50%;
+                left: 40%;
+                @include transform(translateY(-50%));
+                cursor: pointer;
+            }
+        }
+    }
+    &.team {
+        .team-item {
+            width: calc(100%/3);
+            display: inline-block;
+            .name {
+                margin-bottom: 0;
+            }
+            p {
+                margin: 10px 0 40px 0;
+            }
+            .team-photo {
+                @include border-radius(100%);
+                position: relative;
+                width: 70%;
+                margin: 0 auto;
+                cursor: pointer;
+                img {
+                    width: 100%;
+                    @include border-radius(100%);
+                    padding: 0;
+                    margin: 0;
+                }
+                .team-hover {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 1.5;
+                    padding: 65px 10px;
+                    @include opacity(0);
+                    @include border-radius(100%);
+                    @include transition(all 0.5s);
+                    text-align: center;
+                }
+                &:hover {
+                    .team-hover {
+                        background: #62497c;
+                        @include opacity(0.7);
+                        @include border-radius(100%);
+                    }
+                }
+            }
+            .facebook {
+                @include use-sprite("facebook");
+                display: inline-block;
+                margin: 0 5px;
+            }
+            .twitter {
+                @include use-sprite("twitter");
+                display: inline-block;
+                margin: 0 5px;
+            }
+            .google {
+                @include use-sprite("google");
+                display: inline-block;
+                margin: 0 5px;
+            }
+        }
+    }
+    &.life {
+        margin-bottom: 80px;
+        .preview {
+            margin-bottom: 20px;
+        }
+        .thumbnail {
+            display: table;
+            width: 100%;
+            .control {
+                cursor: pointer;
+                background: #2a2a2a;
+                display: inline-block;
+                height: 67px;
+                width: 30px;
+                position: relative;
+                @include transition(all 0.5s);
+                &.previous {
+                    margin-right: 5px;
+                    .left {
+                        @include use-sprite("left-arrow");
+                        position: absolute;
+                        left: 35%;
+                        top: 50%;
+                        @include transform(translateY(-50%));
+                    }
+                }
+                &.next {
+                    margin-left: 5px;
+                    .right {
+                        @include use-sprite("right-arrow");
+                        position: absolute;
+                        left: 35%;
+                        top: 50%;
+                        @include transform(translateY(-50%));
+                    }
+                }
+                &:hover {
+                    background: #62497c;
+                }
+            }
+            .thumb {
+                width: 17.8%;
+                height: 67px;
+                cursor: pointer;
+                display: inline-block;
+                box-sizing: border-box;
+                padding: 0 5px;
+                img {
+                    width: 90%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    &.newsletter {
+        background: url('../img/newsletter-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 160px;
+        background-attachment: fixed;
+        background-position: center top;
+        h1 {
+            color: #FFFFFF;
+            margin-bottom: 40px;
+        }
+        .container {
+            width: 550px;
+            #mail {
+                width: 73%;
+                float: left;
+                height: 46px;
+                @include border-left-radius(5px);
+                outline: none;
+                border: 0;
+                font-family: "Montserrat Bold";
+                font-size: 20px;
+                padding: 0 10px;
+                box-sizing: border-box;
+            }
+            .button {
+                width: 25%;
+                float: left;
+                @include border-left-radius(0);
+                a {
+                    padding: 15px 40px;
+                }
+            }
+        }
+    }
+    &.contact {
+        @import "includes/_contact.scss";
+    }
+}

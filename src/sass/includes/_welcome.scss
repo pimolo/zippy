@@ -1,0 +1,35 @@
+.container {
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 90px;
+}
+.umbrella {
+    @include use-sprite("umbrella");
+    float: right;
+    margin-left: 55px;
+}
+.item {
+    display: inline-block !important;
+    width: 32.9% !important;
+    padding: 0 5px;
+    @include box-sizing(border-box);
+    text-align: center;
+    margin-top: 80px;
+    .bell {
+        @include use-sprite("bell");
+        margin: 0 auto;
+    }
+    .envelop {
+        @include use-sprite("envelop");
+        margin: 0 auto;
+    }
+    .drawner {
+        @include use-sprite("drawner");
+        margin: 0 auto;
+    }
+    h4 {
+        color: #62497c;
+    }
+    p {
+        margin-bottom: 40px;
+    }
+}

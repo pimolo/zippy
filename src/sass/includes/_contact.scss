@@ -1,0 +1,62 @@
+.container {
+    width: 50%;
+    vertical-align: top;
+    display: inline-block;
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 675px;
+    &.left {
+        iframe {
+            width: 100%;
+        }
+    }
+    &.right {
+        background: #ffe26d;
+        padding: 0 40px 30px 40px;
+        h1 {
+            margin: 30px 0 20px 0;
+            text-align: left;
+        }
+        form {
+            text-align: left;
+            width: 50%;
+            label {
+                display: block;
+                font-size: 14px;
+                padding:15px 0 10px 0;
+            }
+            input,
+            textarea {
+                outline: none;
+                border: 0;
+                font-size: 20px;
+                text-align: left;
+                width: 100%;
+                padding: 0 10px;
+                box-sizing: border-box;
+            }
+            textarea {
+                padding: 10px;
+            }
+            input {
+                height: 46px;
+            }
+            span {
+                display: block !important;
+                text-align: center;
+                margin-top: 15px;
+                width: 100%;
+                background: #62497c;
+                @include border-radius(0);
+                a {
+                    padding: 15px 125px;
+                    color: #fefefe;
+                    @include transition(all 0.5s);
+                    &:hover {
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+}

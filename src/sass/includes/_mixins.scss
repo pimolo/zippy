@@ -1,0 +1,5 @@
+@mixin breakpoint($width, $type:'max-width') {
+  @media ($type: $width) {
+    @content;
+  }
+}

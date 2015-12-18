@@ -1,0 +1,321 @@
+doctype html
+html(lang='fr')
+  head
+    meta(charset='UTF-8')
+    title Zippy - template
+    link(rel='stylesheet', href='styles.css')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js')
+    script(src='js/scrollspy.js')
+    script(src='js/midnight.jquery.min.js')
+    meta(name='viewport', content='width=device-width,initial-scale=1.0')
+  body
+    #top.container-xl
+      header
+        .menu
+          .container
+            .navbar
+              .btn-navigation
+                .barre
+                .barre
+                .barre
+              a(href='#top')
+                  img.logo(src='img/logo.png', alt='')
+              .navigation
+                nav
+                  ul
+                    li
+                      a(href='#welcome') Home
+                    li
+                      a(href='#projects') Projects
+                    li
+                      a(href='#pricing') Pricing
+                    li
+                      a(href='#team') Team
+                    li
+                      a(href='#blog') Blog
+                    li
+                      a(href='#contact') Contact
+        .container
+          .text
+            h1 One page promising to  fill all your needs!
+            h3 This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh
+            .btn-header
+              span.button
+                a(href='') Learn more
+              span.button
+                a(href='') Learn more
+          .dot
+          .dot.active
+          .dot
+          .dot
+      #welcome.welcome.section
+        .container
+          h1 Welcome to Zippy
+          .content
+            .umbrella
+            h2
+              | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.
+            .item
+              .bell
+              h4 Lorem ipsum
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam odio enim nam tenetur molestiae eius amet eveniet ut.
+              span.button
+                a(href='#') Learn more
+            .item
+              .envelop
+              h4 Dolor sit
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam odio enim nam tenetur molestiae eius amet eveniet ut.
+              span.button
+                a(href='#') Learn more
+            .item
+              .drawner
+              h4 Consecteture
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam odio enim nam tenetur molestiae eius amet eveniet ut.
+              span.button
+                a(href='#') Learn more
+      #projects.projects.section
+        h1 Projects
+        .projects-example
+          img(src='img/project1.png', alt='')
+          .description
+            h4 Project Name
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est odit mollitia unde illo veniam itaque repellendus id eveniet.
+            span.button.white
+              a(href='') Launch case study
+        .projects-example
+          img(src='img/project2.png', alt='')
+          .description
+            h4 Project Name
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est odit mollitia unde illo veniam itaque repellendus id eveniet.
+            span.button.white
+              a(href='') Launch case study
+        .projects-example
+          img(src='img/project3.png', alt='')
+          .description
+            h4 Project Name
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est odit mollitia unde illo veniam itaque repellendus id eveniet.
+            span.button.white
+              a(href='') Launch case study
+        .projects-example
+          img(src='img/project4.png', alt='')
+          .description
+            h4 Project Name
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est odit mollitia unde illo veniam itaque repellendus id eveniet.
+            span.button.white
+              a(href='') Launch case study
+      #pricing.pricing.section
+        .container
+          h1 Pricing table
+          .content
+            .pricing-item
+              h4 Standart plan
+              p Free
+              span 2 GB Available
+              span 15 max. Contacts
+              span 30 Messages/month
+              span Disgusting Ads
+              span.button
+                a(href='') Buy
+            .pricing-item
+              h4 Business plan
+              p 19$/month
+              span 10 GB Available
+              span 75 max. Contacts
+              span 120 Messages/month
+              span Ads Free
+              span.button
+                a(href='') Buy
+            .pricing-item
+              h4 Premium plan
+              p 14$/month
+              span 100 GB Available
+              span Unlimited Contacts
+              span Unlimited Messages/month
+              span Ads Free
+              span.button
+                a(href='') Buy
+      #video.video.section
+        h1 Video Project
+        .container
+          .player
+            img.media(src='img/video.png', alt='video')
+            img.play(src='img/play.png', alt='play')
+          span.left
+            | Video title
+          span.right
+            | 9:10
+      #team.team.section
+        h1 Zippy team
+        // Thanks Antoine for your nice pics !!! <3
+        .container
+          .content
+            .team-item
+              .team-photo
+                img(src='img/team/nico.png', alt='')
+                .team-hover
+                  a.facebook(href='#')
+                  a.twitter(href='#')
+                  a.google(href='#')
+              h4.name Nicolas Hudelot
+              p Communication
+            .team-item
+              .team-photo
+                img(src='img/team/florian.png', alt='')
+                .team-hover
+                  a.facebook(href='#')
+                  a.twitter(href='#')
+                  a.google(href='#')
+              h4.name Florian Parent
+              p SEO
+            .team-item
+              .team-photo
+                img(src='img/team/remi.png', alt='')
+                .team-hover
+                  a.facebook(href='#')
+                  a.twitter(href='#')
+                  a.google(href='#')
+              h4.name Rémi Andrieux
+              p Lead Developer
+            .team-item
+              .team-photo
+                img(src='img/team/antoine.png', alt='')
+                .team-hover
+                  a.facebook(href='#')
+                  a.twitter(href='#')
+                  a.google(href='#')
+              h4.name Antoine Fontaine
+              p Dev Front
+            .team-item
+              .team-photo
+                img(src='img/team/benjamin.png', alt='')
+                .team-hover
+                  a.facebook(href='#')
+                  a.twitter(href='#')
+                  a.google(href='#')
+              h4.name Benjamin Botella
+              p Graphiste / Motion Designer
+            .team-item
+              .team-photo
+                img(src='img/team/adrien.png', alt='')
+                .team-hover
+                  a.facebook(href='#')
+                  a.twitter(href='#')
+                  a.google(href='#')
+              h4.name Adrien Bourbon
+              p Président
+      #life.life.section
+        h1 Life in Zippy
+        .container
+          .content
+            .preview
+              img(src='img/life/life.png', alt='life')
+            .thumbnail
+              .previous.control
+                .left
+              .thumb
+                img(src='img/life/life-1.png', alt='life-1')
+              .thumb
+                img(src='img/life/life-2.png', alt='life-2')
+              .thumb
+                img(src='img/life/life-3.png', alt='life-3')
+              .thumb
+                img(src='img/life/life-4.png', alt='life-4')
+              .thumb
+                img(src='img/life/life-5.png', alt='life-5')
+              .next.control
+                .right
+      #newsletter.newsletter.section
+        h1 Newsletter Signup
+        .container
+          input#mail(type='mail', placeholder='abc@example.com')
+          span.button
+            a(href='#') Sign up
+      #blog.blog.section
+        .container
+          h1 Blog
+          .content
+            .blog-item
+              img(src='img/blog/blog-1.png', alt='blog-1')
+              h4 Standart plan
+              p Free
+              span 2 GB Available
+              span 15 max. Contacts
+              span 30 Messages/month
+              span Disgusting Ads
+              span.button
+                a(href='') Read More
+            .blog-item
+              img(src='img/blog/blog-2.png', alt='blog-2')
+              h4 Business plan
+              p 19$/month
+              span 10 GB Available
+              span 75 max. Contacts
+              span 120 Messages/month
+              span Ads Free
+              span.button
+                a(href='') Read More
+            .blog-item
+              img(src='img/blog/blog-3.png', alt='blog-3')
+              h4 Premium plan
+              p 14$/month
+              span 100 GB Available
+              span Unlimited Contacts
+              span Unlimited Messages/month
+              span Ads Free
+              span.button
+                a(href='') Read More
+      #contact.contact.section
+        .container.left
+          iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2655.7946843674545!2d4.077486315257632!3d48.26832555002507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ee990d0530cd7d%3A0xdecabd3109be2c43!2sI.U.T.+de+Troyes!5e0!3m2!1sfr!2sfr!4v1450290761512', width='600', height='675', frameborder='0', style='border:0', allowfullscreen='')
+        .container.right
+          h1 Contact
+          form(action='')
+            label(for='name') Name
+            input#name(type='text')
+            label(for='') Email Address
+            input(type='text')
+            label(for='') Subject
+            input(type='text')
+            label(for='') Message
+            textarea(name='', id='', rows='5')
+            span.button
+              a(href='#', type='submit') Send
+      footer
+        .container
+          .footer-bloc.bloc-left
+            p.title Office address
+            p Lorem ipsum dolor, 234
+            p 1200 Consecture
+            p Adipsching
+          .footer-bloc.bloc-middle
+            p.title Follow us
+            .behance
+              a(href='#')
+                img(onmouseout="this.src='img/icons/behance.png';", onmouseover="this.src='img/icons/behance-hover.png';", src='img/icons/behance.png', alt='')
+            .twitter
+              a(href='#')
+                img(onmouseout="this.src='img/icons/twitter-black.png';", onmouseover="this.src='img/icons/twitter-hover.png';", src='img/icons/twitter-black.png', alt='')
+            .linkedin
+              a(href='#')
+                img(onmouseout="this.src='img/icons/linkedin.png';", onmouseover="this.src='img/icons/linkedin-hover.png';", src='img/icons/linkedin.png', alt='')
+            .facebook
+              a(href='#')
+                img(onmouseout="this.src='img/icons/facebook-black.png';", onmouseover="this.src='img/icons/facebook-hover.png';", src='img/icons/facebook-black.png', alt='')
+            .google
+              a(href='#')
+                img(onmouseout="this.src='img/icons/google-black.png';", onmouseover="this.src='img/icons/google-hover.png';", src='img/icons/google-black.png', alt='')
+            .tumblr
+              a(href='#')
+                img(onmouseout="this.src='img/icons/tumblr.png';", onmouseover="this.src='img/icons/tumblr-hover.png';", src='img/icons/tumblr.png', alt='')
+          .footer-bloc.bloc-right
+            p.title Contact us
+            p + 123 456 789
+            p zippy@skype.fr
+            p enquiry@zippy.com
